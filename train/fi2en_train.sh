@@ -5,7 +5,7 @@ FI_NUM=50000
 
 DIR=fi2en/fi2en
 
-NMT_DIR=/project/LIAM/work/WMT19/code/OpenNMT-py/
+NMT_DIR=path_to_NMT
 
 tensorboard_dir=fi2en/runs
 SAVE=fi2en/fi2en/models/transformer_checkpoints
