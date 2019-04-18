@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NMT_DIR=/project/LIAM/work/WMT19/code/OpenNMT-py/
+NMT_DIR=path_to_NMT
 MOSES_DIR=/project/LIAM/work/WMT19/code/mosesdecoder/scripts
 MODEL=fi2en/fi2en/models
 
