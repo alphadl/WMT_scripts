@@ -3,6 +3,7 @@
 mosesdecoder=/project/LIAM/work/WMT19/code/mosesdecoder
 
 lng=fi
-sed 's/\@\@ //g' | \
+#sed 's/\@\@ //g' | \
+sed -r 's/(@@ )|(@@ ?$)//g' | \
 ${mosesdecoder}/scripts/recaser/detruecase.perl | \
 ${mosesdecoder}/scripts/tokenizer/detokenizer.perl -l ${lng}
