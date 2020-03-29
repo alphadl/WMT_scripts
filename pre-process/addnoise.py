@@ -3,7 +3,8 @@ import fileinput
 import random
 import torch
 
-#cat monolingual.de | python $BPEROOT/apply_bpe.py -c code | python interactive.py $DATA --path model.pt --buffer-size 1024 --beam 5 --batch-size 16 |grep -P '^H' |cut -f3- | sed 's/@@\s*//g' | python addnoise.py > translation.en
+#cat monolingual.de | python $BPEROOT/apply_bpe.py -c code | python interactive.py $DATA --path model.pt --buffer-size 1024 --beam 5 \
+#--batch-size 16 |grep -P '^H' |cut -f3- | sed 's/@@\s*//g' | python addnoise.py > translation.en
 
 def main():
     parser = argparse.ArgumentParser(description='Command-line script to add noise to data')
